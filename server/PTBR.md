@@ -14,3 +14,22 @@ Clique em "Launch Instance"
 
 <img src="../images/launch.png" alt="Launch Instance"/>
 
+Selecione a imagem "Amazon Linux 2 LTS Candidate 2 AMI"
+
+<img src="../images/amazonlinux.png" alt="Amazon Linux"/>
+
+Escolha o tipo "t2.micro" e clique em "Next: Configure Instance Details"
+
+<img src="../images/instancetype.png" alt="Instance Type"/>
+
+Habilite o "Auto-assign Public IP" e clique em "Next: Add Storage"
+
+<img src="../images/publicip.png" alt="Public IP"/>
+
+Altere o tamanho do disco de 8 GiB para 15 GiB e clique em "Next: Add Tags"
+
+<img src="../images/storage.png" alt="Storage"/>
+
+Clique em Add Tag e adicione uma Tag chamada "Name" e com o "Valor" docker-lab e clique em "Next: Configure Security Groups" 
+
+<img src="../images/tags.png" alt="Tags"/>
