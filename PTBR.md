@@ -9,7 +9,7 @@ Este guia contém labaratórios e exercícios para mostrar um pouco sobre o Dock
 Para realizar esses laboratórios, você irá precisar de:
 
 * [Conta na AWS](https://aws.amazon.com/pt/premiumsupport/knowledge-center/create-and-activate-aws-account/);
-* [Servidor Linux](./server/README.md) ou [Cloud9](./cloud9/README.md);
+* [Servidor Linux](./server/PTBR.md) ou [Cloud9](./cloud9/PTBR.md);
 
 #### Preparando o ambiente
 
@@ -29,12 +29,12 @@ curl https://raw.githubusercontent.com/claick-oliveira/docker-lab/master/scripts
 
 ### Laboratórios
 
-* **[Lab 1: Docker Overview](./lab1/README.md)**
+* **[Lab 1: Docker Overview](./lab1/PTBR.md)**
 
-* **[Lab 2: Docker Compose](./lab2/README.md)**
+* **[Lab 2: Docker Compose](./lab2/PTBR.md)**
 
-* **[Lab 3: Swarm Cluster](./lab3/README.md)**
+* **[Lab 3: Swarm Cluster](./lab3/PTBR.md)**
 
-* **[Lab 4: ECS](./lab4/README.md)**
+* **[Lab 4: ECS](./lab4/PTBR.md)**
 
-* **[Lab 5: Kubernetes](./lab5/README.md)**
+* **[Lab 5: Kubernetes](./lab5/PTBR.md)**
