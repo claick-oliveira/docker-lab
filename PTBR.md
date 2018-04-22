@@ -1,6 +1,6 @@
 # Docker: Guia
 
-## Overview
+<center><img src="./images/aws-logo.png" alt="Container" style="width: 200px;"/> <img src="./images/docker-logo.png" alt="Container" style="width: 200px;"/></center>
 
 Este guia contém labaratórios e exercícios para mostrar um pouco sobre o Docker e outras ferramentas que fazem parte desse universo como: Como realizar a instalação, comandos, docker-compose, Swarm, ECS e Kubernetes.
 
