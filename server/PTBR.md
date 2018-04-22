@@ -2,7 +2,7 @@
 
 ## Passo a Passo
 
-Acesse sua conta AWS e após na barra de pesquisa digite EC2 e clique na primeira opção:
+Acesse sua conta AWS e após na barra de pesquisa digite "EC2" e clique na primeira opção:
 
 <img src="../images/ec2.png" alt="EC2"/>
 
@@ -51,3 +51,5 @@ Clique em "View Instance"
 Agora que a máquina está ligada, só copiar o IP Público para acessa-la via SSH.
 
 <img src="../images/instance-ip.png" alt="Tags"/>
+
+Divirta-se !
