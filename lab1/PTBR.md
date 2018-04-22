@@ -55,3 +55,5 @@ Os containers são uma abstração da camada de aplicação tendo os códigos e 
 * Runtime: Pode executar um ou milhares de contêineres em poucos segundos.
 
 * Isolamento: Todos os containers em execução seram isolados dos demais processos e sistemas de arquivo do host e entre eles.
+
+Obs: Caso queira se aprofundar em Docker [clique aqui](https://www.docker.com/).
