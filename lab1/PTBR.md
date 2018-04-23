@@ -60,7 +60,7 @@ Obs: Caso queira se aprofundar em Docker [clique aqui](https://www.docker.com/).
 
 ## Lab 1
 
-Nesse primeiro laboratório iremos ver alguns comandos do Docker, como subir seu primeiro container e criar sua primeira imagem por exemplo.
+Nesse primeiro laboratório iremos ver alguns comandos do Docker, como subir seu primeiro container e criar sua primeira imagem por exemplo, em algums exemplos iremos utilizar um nome de container ou ID que foi utilizado durante a criação desse conteúdo lemnre-se que no seu caso pode ser nomes e IDs diferentes.
 
 ### Hello World!
 
@@ -300,7 +300,7 @@ A saída será algo como:
 
 Esse comando traz informações de utilização de CPU, Memória, Rede e Disco. O stats é uma monitoria contínua e para sair dessa tela só digitar `Ctrl+c`.
 
-Saiba mais sobre esse comando [aqui](https://docs.docker.com/engine/reference/commandline/container_stats/)
+Saiba mais sobre esse comando [aqui](https://docs.docker.com/engine/reference/commandline/container_stats/).
 
 #### Logs
 
@@ -310,8 +310,40 @@ Outra comando importante para realizar troubleshooting é o `logs`, ele nos ajud
 docker container logs gifted_khorana
 ```
 
-Para ver outros parâmetros [clique aqui](https://docs.docker.com/engine/reference/commandline/container_logs/)
+Para ver outros parâmetros [clique aqui](https://docs.docker.com/engine/reference/commandline/container_logs/).
 
 #### Kill & Stop
 
+Para parar/matar um container existem dois comandos o `stop` que realiza um desligamento mais "amigável" enviando um [SIGTERM](https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTERM) e depois de um tempo envia um [SIGKILL](https://en.wikipedia.org/wiki/Signal_(IPC)#SIGKILL), já o `kill` envia um `SIGKILL` ou algum outro sinal específico. Exemplo:
+
+```bash
+docker container stop gifted_khorana
+```
+
+ou 
+
+```bash
+docker container kill gifted_khorana
+```
+
+Agora para verificar o container parado execute o comando:
+
+```bash
+docker container ls -a
+```
+
+O status será algo como:
+
+```bash
+Exited (0) About a minute ago
+```
+
+Caso queira saber mais sobre os dois clique em [stop](https://docs.docker.com/engine/reference/commandline/container_stop/) ou [kill](https://docs.docker.com/engine/reference/commandline/container_kill/).
+
 #### Rm
+
+O container que paramos no comando anterior ainda continua em nosso host, para vamos utilizar o comando `rm`, com ele apagamos os containers. Execute o seguinte comando:
+
+```bash
+docker container rm gifted_khorana
+```
