@@ -357,3 +357,6 @@ O container que paramos no comando anterior ainda continua em nosso host, para v
 ```bash
 docker container rm gifted_khorana
 ```
+
+Para saber mais sobre o rm [accesse](https://docs.docker.com/engine/reference/commandline/container_rm/).
+
