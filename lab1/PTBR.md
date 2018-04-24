@@ -360,3 +360,81 @@ docker container rm gifted_khorana
 
 Para saber mais sobre o rm [accesse](https://docs.docker.com/engine/reference/commandline/container_rm/).
 
+### Images
+
+Para gerenciar e construir nossas imagens o Docker disponibiliza alguns comandos.
+
+#### Ls
+
+O comando `ls` lista as imagens que estão no host, digite:
+
+```bash
+docker image ls
+```
+
+O resultado do comando:
+
+```bash
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+nginx               latest              b175e7467d66        13 days ago         109MB
+```
+
+#### Rm
+
+O `rm` é o comando responsável para apagar imagens do host, vamos testar:
+
+```bash
+docker image rm nginx
+```
+
+#### Build
+
+O comando `build` nos ajuda a construir uma imagem, porém para fazer isso precisamos criar um arquivo chamado `Dockerfile`. Esse arquivo é um passo a passo para construir uma determinada imagem, o Dockerfile precisa seguir um padrão de comandos pré definidos, veja um exemplo abaixo:
+
+```Dockerfile
+# Imagem que utilizare-mos como base
+FROM python
+
+# Adiciona os arquivos da pasta atual para dentro da Imagem na pasta /app
+ADD . /app
+
+# Informa o Docker que a pasta de trabalho será a /app
+WORKDIR /app
+
+# Executa um comando, nesse caso a instalação dos requisítos
+RUN pip install -r requirements.txt
+
+# Expoe a porta 8000
+EXPOSE 8000
+
+# Argumentos para o comando entrypoint
+CMD ["--bind", "0.0.0.0:8000", "wsgi"]
+
+# O comando que será executado
+ENTRYPOINT [ "gunicorn"]
+```
+
+Para saber mais sobre Dockerfile [clique aqui](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
+
+Agora que aprendemos o básico sobre Dockerfiles, acesse a pasta app desse projeto e liste os arquivos dentro da pasta:
+
+```bash
+cd app
+ls
+```
+
+Vários arquivos foram listados, porém vamos focar no Dockerfile e no comando `build` por enquanto. Para realizar um build de uma imagem execute esse comando:
+
+```bash
+docker image build -t python-lab .
+```
+
+Esse comando irá criar uma imagem seguindo o que está descrito no arquivo Dockerfile que olhamos anteriormente. O parâmetro `-t` é para "dar" um nome a essa imagem, e o `.`(ponto) é para identificarmos o diretório que executará, ou seja, o atual.
+
+Execute o `ls` para ver a nossa imagem craida:
+
+```bash
+docker image ls
+```
+
+Para saber mais sobre o comando build [clique aqui](https://docs.docker.com/engine/reference/commandline/image_build/).
