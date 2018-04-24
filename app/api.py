@@ -2,6 +2,7 @@
 
 import json
 import logging
+import socket
 
 from flask import Flask
 
@@ -17,6 +18,7 @@ def rest_success(obj):
 def api_home():
     logging.info("API / executing")
     obj = {
+        "host": socket.gethostname(),
         "status": "OK"
     }
     return rest_success(obj)
