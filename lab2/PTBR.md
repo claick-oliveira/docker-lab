@@ -188,7 +188,7 @@ Quer saber mais sobre scale? [clique aqui](https://docs.docker.com/compose/refer
 
 ### Kill & Stop
 
-Assim comos nos comandos normais do docker, o docker-compose também possui `kill` e `stop` e segue a mesma ideia explicada no [lab1](../lab1/PTBR.md)m então para parar ou matar os container do docker-compose.yml, execute:
+Assim comos nos comandos normais do docker, o docker-compose também possui `kill` e `stop` e segue a mesma ideia explicada no [lab1](../lab1/PTBR.md) então para parar ou matar os container do docker-compose.yml, execute:
 
 ```bash
 docker-compose stop
