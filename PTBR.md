@@ -17,6 +17,7 @@ Esses laboratórios precisam de diversas ferramentas:
 
 * **Docker [(veja como instalar)](https://docs.docker.com/install/)**
 * docker-compose
+* docker-machine
 * kubectl
 * kops
 * aws-cli

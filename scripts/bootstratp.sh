@@ -9,6 +9,11 @@
 curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-compose-$(uname -s)-$(uname -m) -o docker-compose
 chmod +x docker-compose && sudo mv docker-compose /usr/local/bin/
 
+# Install docker-machine
+base=https://github.com/docker/machine/releases/download/v0.14.0
+curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+
 # Install kubectl
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 chmod +x kubectl && sudo mv kubectl /usr/local/bin/
