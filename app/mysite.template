@@ -1,0 +1,9 @@
+upstream backend {
+    server app:8000;
+}
+
+server {
+    location / {
+        proxy_pass http://backend;
+    }
+}
