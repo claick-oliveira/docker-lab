@@ -38,6 +38,8 @@ curl https://raw.githubusercontent.com/claick-oliveira/docker-lab/master/scripts
 
 * **[Lab 3: Swarm Cluster](./lab3/PTBR.md)**
 
-* **[Lab 4: ECS](./lab4/PTBR.md)**
+* **[Lab 4: ECR](./lab4/PTBR.md)**
 
-* **[Lab 5: Kubernetes](./lab5/PTBR.md)**
+* **[Lab 5: ECS](./lab5/PTBR.md)**
+
+* **[Lab 6: Kubernetes](./lab6/PTBR.md)**
